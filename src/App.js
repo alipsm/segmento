@@ -81,7 +81,7 @@ export default function App() {
           </Routes>
         </div>
         <Routes location={background || location}>
-          <Route path="/">
+          <Route path="*/">
             <Route path="dashboard/*" element={<DashboardBody />}>
               <Route path="userProfile" element={<EditUserProfile />} />
               <Route path="planStatus" element={<PlanStatus />} />
@@ -104,7 +104,7 @@ export default function App() {
             <Route exact path={`dashboard/setWorkSpace`} element={<WorkSpace />} />
           </Routes>
         )}
-        {/* <LoadingPage /> */}
+        <LoadingPage />
         <ToastContainer rtl />
         {forceUpdate ? "" : ""}
       </div>

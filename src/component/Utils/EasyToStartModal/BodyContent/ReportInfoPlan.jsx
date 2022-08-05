@@ -5,13 +5,18 @@ import { buyPlan } from '../../../Redux/Action/plan';
 
 export default function ReportInfoPlan({ handleClose }) {
 
-  const { forceUpdate, allPackageData, packageUuid } = useSelector(state => state.planState);
+  const { forceUpdate, allPackageData, packageUuid,discountStatus } = useSelector(state => state.planState);
   var packageSelected = "";
+  var discountValue=0;
   allPackageData.forEach(element => {
     if (element.uuid == packageUuid) {
       packageSelected = element;
     }
   });
+
+  // if (discountStatus.value!=0) {
+    // discountValue=discountStatus.value;
+  // }
 
   return (
 

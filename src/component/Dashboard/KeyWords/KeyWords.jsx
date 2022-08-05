@@ -142,7 +142,7 @@ const KeyWords = ({ onClickHandler }) => {
     {SavePopup &&
       <PopUp
       clickHandler={() => showSavePopup(false)}
-      image={"/img/popUp/playlist_add.svg"}
+      image={"img/popUp/playlist_add.svg"}
       type={"sucsess"}
       buttonText={"باشه، فهمیدم!"}
       text={"لیست جدید شما با موفقیت ذخیره شد !"}

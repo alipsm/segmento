@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 export default function ProfileInformation({ userName, userType, email ,changeUserImage}) {
   const userState = useSelector((state) => state.userState);
   // const imgData = userState.image[0] != "" ? URL.createObjectURL(userState.image[0]) : "/../img/dashboard/userProfile/profileImage.png"
-  const imgData = userState.image[0] != "" ? URL.createObjectURL(userState.image[0]) : userState.userData.user!=undefined?userState.userData.user.img!=""?userState.userData.user.img:"/../img/dashboard/userProfile/profileImage.png":"/../img/dashboard/userProfile/profileImage.png"
+  const imgData = userState.image[0] != "" ? URL.createObjectURL(userState.image[0]) : userState.userData.user!=undefined?userState.userData.user.img!=""?userState.userData.user.img:"img/dashboard/userProfile/profileImage.png":"img/dashboard/userProfile/profileImage.png"
   
   return (
     <div className="flex gap-3 items-center">

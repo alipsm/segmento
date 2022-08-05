@@ -139,7 +139,7 @@ export default function ContentpProduction({ onClickHandler }) {
       {UpdatePpUp && (
         <PopUp
           clickHandler={() => showUpdatePpUp(false)}
-          image={"/img/popUp/update.svg"}
+          image={"img/popUp/update.svg"}
           type={"sucsess"}
           buttonText={"باشه"}
           text={"لیست " + " " + activeboxValue + " " + "بروزرسانی شد!"}
@@ -149,7 +149,7 @@ export default function ContentpProduction({ onClickHandler }) {
       {SavePopup && (
         <PopUp
           clickHandler={() => showSavePopup(false)}
-          image={"/img/popUp/playlist_add.svg"}
+          image={"img/popUp/playlist_add.svg"}
           type={"sucsess"}
           buttonText={"باشه"}
           text={

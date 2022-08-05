@@ -275,13 +275,13 @@ export default function EditUserProfile() {
           close={() => setOpenChangeImageModal(false)}
           isOpen={openChangeImageModal}
           setUserImage={setUserImage}
-          userImage={userState.userData.user != undefined & userState.userData.user.img != "" ? userState.userData.user.img : "/../img/dashboard/userProfile/profileImage.png"}
+          userImage={userState.userData.user != undefined & userState.userData.user.img != "" ? userState.userData.user.img : "img/dashboard/userProfile/profileImage.png"}
         />
       )}
       {updatePass && (
         <PopUp
           clickHandler={() => setUpdatePass(false)}
-          image={"/img/popUp/tik.svg"}
+          image={"img/popUp/tik.svg"}
           type={"sucsess"}
           buttonText={" باشه، بزن بریم"}
           text={" حالا می‌توانید کارتان را شروع کنید.   "}
